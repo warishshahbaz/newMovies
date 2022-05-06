@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: url('https://wallpaperaccess.com/full/329583.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header img{
+  display: flex;
+  justify-content: center;
+
+ padding: 2px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(33, 194, 105);
+  opacity: 0.67;
+  z-index: 1;
+}
+input{
+  width: 5%;
+}
+
+.log img {
+ height: 60px;
+ position: relative ;
+ top: -32px;
+ border-radius: 22px;
+}
+
+.field {
+  margin: 12px;
+  position: relative;
+  right: 20px;
+}
+
+.field input {
+  display: flex;
+  font-size: 17px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  padding: 6px;
+  width: 22vw;
+}
+
+.log ul {
+  position: relative;
+  top: 23px;
+  right: -113px;
+  text-transform: capitalize;
+  /* border: 2px solid ; */
+  /* padding: 4px; */
+  border-radius: 14px;
+  display: flex;
+}
+
+.log ul li {
+  list-style: none;
+  padding: 8px;
+  border-radius: 22px;
+}
+
+.log ul li a:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.log ul li a {
+  list-style: none;
+  margin: 12px;
   color: white;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 14px;
+  padding: 4px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.upcoming {
+  position: relative;
+  top: 170px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.movies_name {
+  color: white;
+  font-size: 43px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.upcoming button {
+  margin: 20px;
+  padding: 12px;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  border-radius: 22px;
+  background-color: rgb(192, 228, 60);
+  text-transform: capitalize;
+}
+
+.upcoming button:hover {
+  background-color: #fff;
+}
+
+
+.main_box {
+  position: relative;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container_card {
+  position: relative;
+  left: 42px;
+  margin-right: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 12px;
+  gap: 15px;
+  flex-direction: row;
+  float: left;
+}
+
+.cards {
+  width: 200px;
+  height: 320px;
+  background-color: white;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 2px 5px 23px black;
+  text-overflow: ellipsis;
+ position: relative;
+ left: 12px;
+ margin-left: 17px;
+}
+
+.cards img {
+  object-fit: cover;
+  width: 200px;
+  height: 260px;
+  padding: 12px;
+}
+
+.movies_heading {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+}
+
+.cards h5 {
+  /* display:block; */
+  position: relative;
+  top: -12px;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.type {
+  position: relative;
+  top: -7px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-left: 2px;
+}
+
+.first_p {
+  color: red;
+  font-weight: 600;
+}
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+ margin: 12px;
+ background-color: rgb(89, 154, 170);
+}
+.container img{
+ margin: 12px;
+ height: 300px;
+ border-radius: 5px;
+ box-shadow: 2px 4px 24px;
+}
+.details{
+  z-index: 1;
+  position: relative;
+  width: 400px;
+  height: 90%;
+  padding: 1px;
+  font-size: 17px;
+ 
+  /* background-color: rgb(90, 75, 75); */
+  margin: 5px;
+}
+.details:hover{
+  color: red;
+}
+.details span{
+  color: rgb(172, 202, 227);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+ position: relative;
+ top: 162px;
+ left: -381px;
+}
+.description img{
+  height: 50px;
+}
+.column2{
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.avatars{
+  position: relative;
+  top: -32px;
+  right: -212px;
+  font-size: 11px;
+}
+.avatars img{
+  height: 30px;
+}
+
+@media screen and (max-width:400px) {
+  .container_card {
+
+    left: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  nav{
+    position: absolute;
+  }
+  .cards {
+    width: 240px;
+  }
+
+  .cards img {
+    width: 240px;
+    object-fit: fill;
+  }
+
+  .log ul {
+    right: -60px;
+  }
+
+  .log {
+    margin: 12px;
+    position: relative;
+    top: -12px;
+  }
+  .container{
+    width: 350px;
+    overflow: hidden;
+  }
+  .container img{
+    width: 100px;
+    height: 100px;
+  }
+  .column2{
+   display: none;
+  }
+  input{
+    position: relative;
+    top: 14px;
+    width: 00px;
   }
 }
+
+/* ************************************************ */
+
