@@ -6,7 +6,7 @@ function Header({inputHandle,inputData}) {
 
     const upComingMovies = ()=>{
         alert('Wait for few days...')
-        // swal("Hello world!")
+        
     }
     return (
         <>
