@@ -43,9 +43,10 @@ input{
 
 .log img {
  height: 60px;
+ width: 60px;
  position: relative ;
  top: -32px;
- border-radius: 22px;
+ border-radius: 50%;
 }
 
 .field {
@@ -63,38 +64,22 @@ input{
   width: 22vw;
 }
 
-.log ul {
+.log  {
   position: relative;
-  top: 23px;
-  right: -113px;
+  top: 33px;
+  right: -23px;
   text-transform: capitalize;
   /* border: 2px solid ; */
   /* padding: 4px; */
-  border-radius: 14px;
+  border-radius: 50%;
   display: flex;
 }
 
-.log ul li {
-  list-style: none;
-  padding: 8px;
-  border-radius: 22px;
-}
 
-.log ul li a:hover {
-  background-color: wheat;
-  color: black;
-}
 
-.log ul li a {
-  list-style: none;
-  margin: 12px;
-  color: white;
-  font-weight: 400;
-  font-size: 20px;
-  border-radius: 14px;
-  padding: 4px;
-  text-decoration: none;
-}
+
+
+
 
 
 
@@ -114,7 +99,6 @@ input{
   margin: 20px;
   padding: 12px;
   font-size: 20px;
-  /* border: 1px solid black; */
   border-radius: 22px;
   background-color: rgb(192, 228, 60);
   text-transform: capitalize;
@@ -194,8 +178,11 @@ input{
   color: red;
   font-weight: 600;
 }
-.container{
+.movie-card{
   width: 100%;
+}
+.container{
+  /* width: 100%; */
   height: auto;
   display: flex;
  margin: 12px;
@@ -247,6 +234,14 @@ input{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
+}
+.cancelBtn{
+  position: relative;
+  top: 12px;
+  left: -1px;
+  font-size: 18px;
+  color: red;
 }
 .avatars{
   position: relative;
@@ -258,7 +253,7 @@ input{
   height: 30px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
   .container_card {
 
     left: 40px;
@@ -275,18 +270,13 @@ input{
     object-fit: fill;
   }
 
-  .log ul {
-    right: -60px;
-  }
-
-  .log {
-    margin: 12px;
-    position: relative;
-    top: -12px;
-  }
   .container{
-    width: 350px;
+   
+    width: 90%;
     overflow: hidden;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+    box-shadow: 2px 5px 21px;
   }
   .container img{
     width: 100px;
@@ -295,10 +285,19 @@ input{
   .column2{
    display: none;
   }
-  input{
-    position: relative;
-    top: 14px;
-    width: 00px;
+
+  .field{
+    width: 200px;
+  }
+  .field input{
+   width: 200px;
+   border-radius: 32px;
+  }
+  .details{
+    font-size: 12px;
+  }
+  .details span{
+    font-size: 12px;
   }
 }
 

@@ -11,18 +11,8 @@ function Header({inputHandle,inputData}) {
     return (
         <>
             <header>
-            {/* <img src="https://wallpaperaccess.com/full/329583.jpg" alt="" /> */}
                 <nav>
                     <div className="log">
-                        <ul><li>
-                            <Link to="/main">Play List</Link>
-
-                        </li>
-                        <li>
-                    <Link to="/home">Home</Link>
-                    
-                    </li>
-                        </ul>
                         <img src="https://static8.depositphotos.com/1378583/987/v/600/depositphotos_9878369-stock-illustration-camera-and-film-logo.jpg" alt="logo" /></div>
                     <div className="field"><input type="text" placeholder='search..' onChange={inputHandle} value={inputData} /></div>
                 </nav>
