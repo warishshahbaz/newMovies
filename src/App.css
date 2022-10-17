@@ -36,7 +36,21 @@ nav {
   color: rgb(33, 194, 105);
   opacity: 0.67;
   z-index: 1;
+ 
 }
+.login_btn{
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_btn button{
+  padding: 5px 7px;
+  font-size: 15px;
+ 
+}
+
 input{
   width: 5%;
 }
@@ -59,7 +73,7 @@ input{
   display: flex;
   font-size: 17px;
   text-transform: capitalize;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 6px;
   width: 22vw;
 }
